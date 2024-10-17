@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace</title>
+    </head>
+    <body>
+        <div> <!--Tabel Menu Atas-->
+            <table style="font-size: 18px; color: black; margin-left: auto; margin-right: auto; border: 3px solid black; width: 90%; text-align: center;">
+                <tr>
+                    <td><a href="" style="color: black; text-decoration: none;">Home</a></td>
+                    <td>|</td>
+                    <td><a href="Generate_Link_Pemesanan_Barang.html" style="color: black; text-decoration: none;">Generate Link</a></td> 
+                    <td>|</td>
+                    <td><a href="" style="color: black; text-decoration: none;">Transaction History</a></td>
+                    <td>|</td>
+                    <td><a href="" style="color: black; text-decoration: none;">Policy</a></td>
+                    <td>|</td>
+                    <td><a href="" style="color: black; text-decoration: none;">Logout</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div>  <!--Form Tabel-->
+            <form action="" method="post">
+                <table style="font-size: 18px; display: flex; justify-content: center; align-items: center; margin: 0; float: right; margin-top: 40px; margin-right: 170px;">
+                    <tr>
+                        <td><label for="produk">Title Here : </label></td>
+                        <td><input type="text" value="MacBook Air 800" style="width: 400px;" name="produk"></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="deskripsi">Description : </label></td>
+                        <td><br><textarea name="deskripsi" rows="5" style="width: 400px;">Year : 2009
+                                                                                                        Model :
+                                                                                                        Condition : Mint</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="nomorakun">Account number : </label></td>
+                        <td><br><input type="text" value="123-456-789-0" name="nomorakun" style="width: 400px;"></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="rekening">Bank : </label></td>
+                        <td><br><select name="rekening">
+                            <option>HSBC</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="pembeli">Account Holder : </label></td>
+                        <td><br><input type="text" value="Name Here" name="pembeli" style="width: 400px;"></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="nomorrekening">Transaction : </label></td>
+                        <td><br><input type="number" min="1" max="3" value="1" step="1" name="nomorrekening" ><br>
+                                    *if the transaction is for 3 person, choose 3 from the drop-down list <br>
+                                    <input type="checkbox" checked> <label for=""><span style="color: green;">Send to Mobile Phone</span></label> <br>
+                                    <input type="checkbox" checked> <label for=""><span style="color: green;">Send to Email</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="nomorhp">Send to Mobile Phone : </label></td>
+                        <td><br><input type="tel" value="1234567890, 1234567891" name="nomorhp" style="width: 400px;"></td>
+                    </tr>
+                    <tr>
+                        <td><br><label for="akunemail">Send to Email : </label></td>
+                        <td><br><input type="email" value="mfrmm2g13@soton.ac.uk, fys_06@yahoo.com" name="akunemail" style="width: 400px;"></td>
+                    </tr>
+                    <tr>
+                        <td> <br><button style="background-color: green; padding: 10px 20px; cursor: pointer;"> <a href="Generate_Link_Pemesanan_Barang.html" style="text-decoration: none; color: white;">Generate Nabr Link</a></button></td>
+                    </tr>
+                </table>
+        
+        </div>
+
+        <div>   <!--Foto Produk-->
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=6s9Gcv9F&id=CF09B10EFC03953D28BD40C204977B2345605665&thid=OIP.6s9Gcv9FypwZr9zOVscxBwHaGq&mediaurl=https%3a%2f%2ffastpng.com%2fimages%2ffile%2fmacbook-pro-png-jggxc7xsb6upmxq7.png&exph=916&expw=1019&q=MacBook+Pro+PNG&simid=608035720678899277&FORM=IRPRST&ck=4CD45279C1F70753A2E50109F710F56E&selectedIndex=13&itb=1">
+            <img src="img/Macbook.png" alt="Madu Sehat" width="300px" style="margin: 0; margin-top: 40px; margin-left: 90px;">
+            </a>
+                <!--Upload File Foto-->
+            <br><br><input type="file" name="photo" id="upload" style="margin-left: 90px;">
+            </form>
+        </div>
+    </body>
+</html>
+
